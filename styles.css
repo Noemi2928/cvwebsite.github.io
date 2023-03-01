@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	font-family: 'Poppins';
+	box-sizing: border-box;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+	background: #100F0F;
+}
+
+p{
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* NAVBAR */
+
+header{
+	background: #100F0F;
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	z-index: 99;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	padding: 15px 20px;
+}
+
+header span{
+	color: #00ffab;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#navbar ul{
+	list-style: none;
+	display: flex;
+	text-align: right;
+}
+
+#navbar ul li a{
+	font-weight: bold;
+	text-decoration: none;
+	padding: 5px;
+	margin: 0px 5px;
+}
+
+#navbar ul li a:hover{
+	color: #00ffab;
+	transition: .3s;
+}
+
+.responsive-navbar-icon{
+	display: none;
+	cursor: pointer;
+	background-color: #00ffab;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+
+/* PERFIL */
+
+#profile{
+	padding: 150px 20px 40px;
+	text-align: center;
+	background: #1A1919;
+}
+
+#profile h1{
+	color: #00ffab;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+#profile h2{
+	color: #D8D8D8;
+	font-weight: inherit;
+	font-size: 22px;
+	margin-top: 2px;
+	padding-bottom: 20px;
+}
+
+#profile img{
+	display: block;
+	border: 10px solid #00ffab;
+	max-width: 270px;
+	border-radius: 100%;
+	margin: auto;
+}
+
+/* EDUCACION */
+
+#education, #laboral{
+	padding: 30px;
+	background: #1A1919;
+}
+
+#education h2, #laboral h2, #personal-info h2{
+	font-size: 30px;
+	margin-top: 40px;
+	padding-bottom: 15px;
+}
+
+#education .row, #laboral .row, #personal-info .row{
+	display: flex;
+}
+
+#education .row .colum{
+	padding: 0px 30px;
+	width: 50%;
+	border-left: 3px solid #00ffab;
+}
+
+#education .row .colum h3{
+	margin-bottom: 2px;
+}
+
+#education .row .colum .institucion{
+	color: #00ffab;
+	display: block;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#education .row .colum .year, #laboral .row .colum span{
+	color: #00ffab;
+	display: block;
+	margin-top: 0px;
+	font-size: 18px;
+}
+
+/* EXPERIENCIA LABORAL */
+
+#laboral .row .colum{
+	padding: 0px 30px;
+	width: 50%;
+	text-align: right;
+	border-right: 3px solid #00ffab;	
+}
+
+#laboral .row .colum h3{
+	color: #00ffab;
+	font-size: 25px;
+	margin-bottom: 2px;
+}
+
+/* INFORMACION PERSONAL */
+
+#personal-info{
+	padding: 30px 30px 10px;
+	background: #1A1919;
+}
+
+#personal-info .row .colum{
+	width: 50%;
+	padding-top: 33px;
+	padding-right: 20px;
+}
+
+/* CONTACTO */
+
+#contact ul .icons{
+	display: block;
+	text-decoration: none;
+	border: 1px 1px 1px solid #D8D8D8;
+	background-color: #D8D8D8;
+	border-radius: 30px;
+	font-size: 18px;
+	color: black;
+	margin-bottom: 5px;
+}
+
+#contact ul .icons i{
+	color: #00ffab;
+	font-size: 20px;
+	padding: 15px;
+	border: 3px solid #00ffab;
+	border-radius: 100%;
+	background: black;
+}
+
+#contact ul .icons i:hover{
+	color: #100F0F;
+	background: #00ffab;
+	font-size: 23px;
+}
+
+/* HABILIDADES */
+
+#skills ul li{
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+#skills ul li .tags{
+	display: flex;
+}
+
+#skills ul li span{
+	width: 50%;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: right;
+	padding-right: 50px;
+}
+
+#skills ul li .skill-tag{
+	font-weight: bold;
+	color: #14FFEC;
+	text-align: left;
+}
+
+#skills ul li .bar-progress{
+	height: 8px;
+	width: 90%;
+	background-color: black;
+	border-radius: 25px;
+}
+
+#skills ul li .progress{
+	background-image: linear-gradient(to right, #14ffec, #00ffda, #00ffc5, #00ffab, #14ff8d);
+	height: 8px;
+	border-radius: 25px;
+}
+
+#skills ul li .progress.first-skill{
+	width: 83.7%;
+}
+
+#skills ul li .progress.second-skill{
+	width: 78.3%;
+}
+
+#skills ul li .progress.third-skill{
+	width: 71.1%;
+}
+
+#skills ul li .progress.fourth-skill{
+	width: 85.5%;
+}
+
+#skills ul li .progress.fifth-skill{
+	width: 58.5%;
+}
+
+/* REDES SOCIALES */
+
+footer{
+	background: #100F0F;
+	padding: 50px;
+	text-align: center;
+}
+
+.social li{
+	list-style: none;
+	margin: 15px 10px;
+	font-size: 25px;
+	display: inline-block;
+}
+
+.social li i{
+	color: #00ffab;
+	border: 1px solid #00ffab;
+	border-radius: 100%;
+	padding: 15px;
+}
+
+.social li i:hover{
+	color: black;
+	background: #00ffab;
+	font-size: 21.5px;
+}
+
+
+/* RESPOSIVE */
+@media screen and (max-width:750px){
+
+	/*MENU*/
+	#navbar{
+		display: none;
+	}
+
+	.responsive-navbar-icon{
+		display: block;
+	}
+
+	#navbar.responsive{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 70px;
+		width: 200px;
+		background-color: #212121;
+	}
+
+	#navbar.responsive ul {
+		display: block;
+		text-align: center;
+	}
+
+	#navbar.responsive ul li{
+		padding: 10px 15px;
+		border-bottom: 1px solid grey;
+	}
+
+	#navbar.responsive ul li:hover {
+	  background-color: grey;
+	}
+
+	h2{
+		text-align: center;
+	}
+
+	/*EDUCACION Y EXPERIENCIA LABORAL*/
+	#education .row, #laboral .row{
+		display: block;
+	}
+
+	#education .row .colum, #laboral .row .colum{
+		text-align: center;
+		width: 100%;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 3px solid #00ffab;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#education .row .colum p, #laboral .row .colum p{
+		margin-bottom: 30px;
+	}
+
+	/*INFORMACION PERSONAL*/
+	#personal-info .row{
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	#personal-info .row .colum{
+		width: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	footer .social li{
+		font-size: 23px;
+	}
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naomi Galarza - CV</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/d4c9bb5d0c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--NAVBAR DEL CV-->
+    <header>
+        <div>
+            <span>CV</span>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#profile" onclick="choice()">Perfil</a></li>
+                <li><a href="#education" onclick="choice()">Educación</a></li>
+                <li><a href="#laboral" onclick="choice()">Experiencia laboral</a></li>
+                <li><a href="#skills" onclick="choice()">Habilidades</a></li>
+                <li><a href="#contact" onclick="choice()">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="responsive-navbar-icon" onclick="showHideNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!--PERFIL-->
+        <section id="profile">
+            <div>
+                <img src="images/profile_photo.png" alt="Foto de perfil del curriculum.">
+            </div>
+            <div>
+                <h1>NAOMI GALARZA</h1>
+                <h2>Desarrolladora Front-End</h2>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </section>
+
+        <!--EDUCACION-->
+        <section id="education">
+            <h2>Educación</h2>
+            <div class="row">
+                <div class="colum">
+                    <h3>Título 1</h3>
+                    <span class="institucion">Nombre de la institución</span>
+                    <span class="year">20xx</span>
+                    <p>
+                        Breve descripción del título.
+                    </p>
+                </div>
+                <div class="colum">
+                    <h3>Título 2</h3>
+                    <span class="institucion">Nombre de la institución</span>
+                    <span class="year">20xx</span>
+                    <p>
+                        Breve descripción del título.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--EXPERIENCIA LABORAL-->
+        <section id="laboral">
+            <h2>Experiencia laboral</h2>
+            <div class="row">
+                <div class="colum">
+                    <h3>Puesto y/o empresa 1</h3>
+                    <span>20xx-20xx</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="colum">
+                    <h3>Puesto y/o empresa 2</h3>
+                    <span>20xx-20xx</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--INFORMACION PERSONAL-->
+        <section id="personal-info">
+            <div class="row">
+                <!--SECCION HABILIDADES-->
+                <div id="skills" class="colum">
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>
+                            <div class="tags">
+                                <span class="skill-tag">HTML</span>
+                                <span>93%</span>
+                            </div>
+                            <div class="bar-progress">
+                                <div class="progress first-skill">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tags">
+                                <span class="skill-tag">CSS</span>
+                                <span>87%</span>
+                            </div>
+                            <div class="bar-progress">
+                                <div class="progress second-skill">
+                                </div>
+                            </div>
+                        </li>
+                       <li>
+                            <div class="tags">
+                                <span class="skill-tag">JavaScript</span>
+                                <span>79%</span>
+                            </div>
+                            <div class="bar-progress">
+                                <div class="progress third-skill">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tags">
+                                <span class="skill-tag">Inglés</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="bar-progress">
+                                <div class="progress fourth-skill">
+                                </div>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="tags">
+                                <span class="skill-tag">Portugués</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="bar-progress">
+                                <div class="progress fifth-skill">
+                                </div>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+                <!--SECCION CONTACTO-->
+                <div id="contact" class="colum">
+                    <h2>Contacto</h2>
+                    <ul class="additional-info">
+                        <li class="icons">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            04-01-1992 | 31 años
+                        </li>
+                        <li class="icons">
+                            <i class="fa-solid fa-phone"></i>
+                            (809) 478-5953
+                        </li>
+                        <li class="icons">
+                            <i class="fa-solid fa-location-dot"></i>
+                            8506 Buenos Aires, Argentina
+                        </li>
+                        <li class="icons">
+                            <i class="fa-solid fa-envelope"></i>
+                            naomi.galarza@example.com
+                        </li>
+                        <li class="icons">
+                            <i class="fa-solid fa-globe"></i>
+                            www.webexample.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--REDES SOCIALES-->
+    <footer>
+        <ul class="social">
+            <li>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
