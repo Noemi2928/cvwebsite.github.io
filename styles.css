@@ -355,3 +355,9 @@ footer{
 		font-size: 23px;
 	}
 }
+
+@media screen and (max-width: 500px){
+	#contact ul .icons{
+		font-size: 14px;
+	}
+}
