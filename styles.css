@@ -358,6 +358,6 @@ footer{
 
 @media screen and (max-width: 500px){
 	#contact ul .icons, #contact ul .icons i, footer .social li {
-		font-size: 15px;
+		font-size: 13.8px;
 	}
 }
